@@ -24,15 +24,15 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
 
   s.subspec 'SCXModel' do |rcModel|
-    rcModel.source_files = 'RCModel/**/*.{h.m}'
+    rcModel.source_files = 'RCModel/*.{h.m}'
   end
 
-  s.subspec 'SCXCahce' do |rcCache|
-    rcCache.source_files = 'RCCache/**/*.{h.m}'
-  end
+  # s.subspec 'SCXCahce' do |rcCache|
+  #   rcCache.source_files = 'RCCache/**/*.{h.m}'
+  # end
 
-  s.subspec 'SCXQueue' do |rcQueue|
-    rcQueue.source_files = 'RCQueue/**/*.{h.m}'
-  end
+  # s.subspec 'SCXQueue' do |rcQueue|
+  #   rcQueue.source_files = 'RCQueue/**/*.{h.m}'
+  # end
 
 end
