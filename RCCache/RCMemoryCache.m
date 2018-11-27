@@ -7,8 +7,9 @@
 //
 
 #import "RCMemoryCache.h"
-#import <RCDispatchQueueLib/RCDispatchQueueLib.h>
 #import <pthread.h>
+#import <QuartzCore/QuartzCore.h>
+#import <UIKit/UIKit.h>
 #define RCINLINE static inline
 #define WEAK __weak typeof(self)weakSelf = self;
 #define STRONG __strong typeof(weakSelf)strongSelf = weakSelf;
@@ -18,7 +19,7 @@
 
  */
 RCINLINE dispatch_queue_t RCReleaseQueue(){
-    return RCDispatchQueuePool(NSQualityOfServiceUtility);
+    return dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0);
 }
 #pragma mark -
 #pragma mark -------------- node(链表节点) ---------------

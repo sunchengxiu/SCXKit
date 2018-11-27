@@ -19,20 +19,20 @@ Pod::Spec.new do |s|
   s.author             = { "孙承秀" => "15699998823@163.com" }
 
 
-  s.source       = { :git => "https://github.com/sunchengxiu/RCKit.git" }
+  s.source       = { :git => "https://github.com/sunchengxiu/SCXKit.git" }
 
   s.ios.deployment_target = '7.0'
 
-  s.subspec 'SCXModel' do |rcModel|
-    rcModel.source_files = 'RCModel/*.{h.m}'
-  end
-
-  # s.subspec 'SCXCahce' do |rcCache|
-  #   rcCache.source_files = 'RCCache/**/*.{h.m}'
+  # s.subspec 'SCXModel' do |model|
+  #   model.source_files = 'RCModel/**/*.{h,m}'
   # end
 
+  s.subspec 'SCXCahce' do |rcCache|
+    rcCache.source_files = 'RCCache/**/*.{h,m}'
+  end
+
   # s.subspec 'SCXQueue' do |rcQueue|
-  #   rcQueue.source_files = 'RCQueue/**/*.{h.m}'
+  #   rcQueue.source_files = 'RCQueue/**/*.{h,m}'
   # end
 
 end
