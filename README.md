@@ -1,2 +1,2 @@
-# SCXKit
-模仿 yykit
+# RCKit
+模仿 YYkit
