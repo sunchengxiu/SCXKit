@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.author             = { "孙承秀" => "15699998823@163.com" }
 
 
-  s.source       = { :git => "https://github.com/sunchengxiu/SCXKit.git" }
+  s.source       = { :git => "https://github.com/sunchengxiu/SCXKit.git", :tag => "v1.0.0" }
 
   s.ios.deployment_target = '7.0'
 
